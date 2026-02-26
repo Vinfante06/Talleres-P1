@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'movie.apps.MovieConfig',
+    'news.apps.NewsConfig',
 
 ]
 
