@@ -3,7 +3,7 @@ from django.db import models
 class Movie(models.Model):
     title= models.CharField(max_length=200)
     description= models.CharField(max_length=1000)
-    image= models.ImageField(upload_to= 'media/movie/images/')  
+    image = models.ImageField(upload_to='movie/images/', default='movie/images/default.jpg')
     url = models.URLField(blank=True)
     genre = models.CharField(blank=True, max_length=250)
     year = models.IntegerField(blank=True, null=True)
